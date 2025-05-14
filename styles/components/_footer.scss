@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as v;
+
+/* FOOTER */
+.footer {
+  margin-block-start: 2rem;
+  padding: 16px;
+  inline-size: 100%;
+  background-color: v.$secondary-colour;
+  color: v.$text-light;
+  
+  div p {
+    padding: 8px;
+  }
+
+  p a {
+    color: inherit;
+  }
+}

@@ -1,0 +1,57 @@
+@use "../abstracts/variables" as v;
+
+/* HERO SECTION */
+.hero {
+  inline-size: 100vw;
+  block-size: 97vh; /*not completely happy, but best way I found to cover the remaining space after header is rendered in... was difficult with responsive header*/
+  color: v.$text-light;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../../img/kobo-lady.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__content {
+    max-inline-size: min(90vw, 68ch);
+    block-size: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__paragraph {
+    text-align: justify;
+  }
+
+  &__buttons {
+    margin-inline-start: auto;
+  }
+
+  &__button {
+    color: v.$text-light;
+    border: 1px solid white;
+    font-size: 1.125rem;
+    padding: 0.25rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    box-shadow: 3px 3px #00000050;
+    transition: ease-in opacity .2s;
+  }
+
+  &__button:hover {
+    opacity: .5;
+  }
+
+  &__button--buy {
+    background-color: v.$primary-colour;
+  }
+
+  &__button--learn {
+    background-color: v.$secondary-colour;
+  }
+
+  &__button--learn a {
+    color: inherit;
+    text-decoration: none;
+  }
+}

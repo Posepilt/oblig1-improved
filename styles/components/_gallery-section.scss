@@ -1,0 +1,10 @@
+/* GALLERY */
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  img {
+    scroll-snap-align: center;
+  }
+}

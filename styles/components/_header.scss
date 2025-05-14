@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as v;
+
+/* HEADER */
+.header {
+    background-color: v.$primary-colour;
+    inline-size: 100vw;
+    position: sticky;
+    top: 0;
+
+    &__logo {
+        max-inline-size: min(35vw, 200px);
+    }
+}

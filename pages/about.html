@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/main.css">
+    <title>About page</title>
+</head>
+<body>
+    <header class="header">
+        <a href="../index.html"><img src="../img/logo-white.png" alt="Rakuten Kobo brand logo." class="header__logo"></a>
+    </header>
+    <main>
+        <h1 style="color: #bf0001; margin-block: 2rem 1rem; border: none;" class="text-center">Brief description of project</h1>
+        <section class="stack-section wrapper">
+            <div>
+                <h2>BEM</h2>
+                <p>I used the BEM method to name HTML classes clearly and predictably. Main components (e.g., header, sections, footer) serve as blocks, while child elements are named using the block’s name, followed by __ and a descriptive word (e.g., header__logo, hero__button). This prevents name conflicts and simplifies class naming.</p>
+                <p>I only used a modifier for buttons since the page is small, but in larger projects with multiple buttons, cards, or themes, modifiers would be useful.</p>
+            </div>
+            <div>
+                <h2>Stack and Cover layout</h2>
+                <p>I used two stack layouts, one with larger margins for section separation and a smaller one for spacing within sections. This keeps the design structured and consistent.</p>
+                <p>The hero section uses a cover layout, with styles placed in the hero-section file for organization.</p>
+            </div>
+            <div>
+                <h2>SASS files</h2>
+                <p>I structured my SASS files into category folders and combined them into one main file using @use and @forward in _index files. This reduces clutter and allows linking just one stylesheet in HTML. I tried compiling separate SASS files into individual CSS files but found it inefficient.</p>
+            </div>
+            <div>
+                <h2>Main design decisions</h2>
+                <p><b>Visual Hierarchy:</b> I used typography, heading levels (h1, h2, h3), and spacing to create a clear structure.</p>
+                <p><b>Consistency:</b> SASS variables ensure uniform colors, and reusing stack layouts, grids and utility classes maintains a consistent design.</p>
+            </div>
+            <div>
+                <h2>Logical properties</h2>
+                <p>I applied logical properties for margins, padding, text alignment, width, and height to improve accessibility for different reading directions.</p>
+            </div>
+            <div>
+                <h2>Responsiveness without media queries</h2>
+                <p>I went for mobile first approach. From there I used responsive units (rem, %, viewport units) and the min() function to scale the layout naturally across devices. This limits full-width use on large screens, but it works without media queries.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__content grid-container-section text-start wrapper">
+            <p>Learn more about this page on the <a href="./about.html">About page</a>.</p>
+            <p>This page was created as part of the subject IDG1293 of the design department by Adrian Malvik, a student from <abbr title="Bachelor Web Utvikling">BWU</abbr>.</p>
+        </div>
+    </footer>
+</body>
+</html>

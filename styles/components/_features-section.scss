@@ -1,0 +1,13 @@
+@use "../abstracts/variables" as v;
+
+/* FEATURES SECTION */
+.features__feature {
+  background: v.$item-colour;
+  border: 2px solid v.$secondary-colour;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.features__img {
+  border-radius: 8px;
+}

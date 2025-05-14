@@ -1,0 +1,159 @@
+/* GLOBAL */
+img {
+  max-inline-size: 100%;
+  display: block;
+}
+
+h1 {
+  color: white;
+  font-size: 2.2rem;
+  border-inline-start: 4px solid #bf0001;
+  padding-inline-start: 0.5rem;
+}
+
+h2 {
+  color: #bf0001;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+}
+
+/* FEATURES SECTION */
+.features__feature {
+  background: #f2f2f2;
+  border: 2px solid #222222;
+  border-radius: 8px;
+  padding: 8px;
+}
+
+.features__img {
+  border-radius: 8px;
+}
+
+/* FOOTER */
+.footer {
+  margin-block-start: 2rem;
+  padding: 16px;
+  inline-size: 100%;
+  background-color: #222222;
+  color: white;
+}
+.footer div p {
+  padding: 8px;
+}
+.footer p a {
+  color: inherit;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.gallery img {
+  scroll-snap-align: center;
+}
+
+/* HEADER */
+.header {
+  background-color: #bf0001;
+  inline-size: 100vw;
+  position: sticky;
+  top: 0;
+}
+.header__logo {
+  max-inline-size: min(35vw, 200px);
+}
+
+/* HERO SECTION */
+.hero {
+  inline-size: 100vw;
+  block-size: 97vh; /*not completely happy, but best way I found to cover the remaining space after header is rendered in... was difficult with responsive header*/
+  color: white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../../img/kobo-lady.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.hero__content {
+  max-inline-size: min(90vw, 68ch);
+  block-size: 100%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__paragraph {
+  text-align: justify;
+}
+.hero__buttons {
+  margin-inline-start: auto;
+}
+.hero__button {
+  color: white;
+  border: 1px solid white;
+  font-size: 1.125rem;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 3px 3px rgba(0, 0, 0, 0.3137254902);
+  transition: ease-in opacity 0.2s;
+}
+.hero__button:hover {
+  opacity: 0.5;
+}
+.hero__button--buy {
+  background-color: #bf0001;
+}
+.hero__button--learn {
+  background-color: #222222;
+}
+.hero__button--learn a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* REVIEWS SECTION */
+.reviews__review {
+  padding: 8px;
+}
+
+/* LAYOUT */
+.stack-main > * + * {
+  margin-block-start: 2rem;
+}
+
+.stack-section > * + * {
+  margin-block-start: 0.5rem;
+}
+
+.grid-container-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
+
+/* UTILITY */
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.wrapper {
+  max-inline-size: min(90vw, 650px);
+  margin-inline: auto;
+}/*# sourceMappingURL=main.css.map */

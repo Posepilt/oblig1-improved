@@ -1,0 +1,13 @@
+/* LAYOUT */
+.stack-main > * + * { 
+  margin-block-start: 2rem; 
+}
+.stack-section > * + * {
+  margin-block-start: 0.5rem; 
+}
+
+.grid-container-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 8px;
+}
