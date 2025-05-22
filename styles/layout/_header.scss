@@ -2,12 +2,12 @@
 
 /* HEADER */
 .header {
-    background-color: v.$primary-colour;
+    background-color: v.$primary;
     inline-size: 100vw;
     position: sticky;
     top: 0;
 
     &__logo {
-        max-inline-size: min(35vw, 200px);
+        max-block-size: v.$space-m-s;
     }
 }

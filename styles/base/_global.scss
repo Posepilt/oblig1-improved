@@ -1,18 +1,14 @@
 @use "../abstracts/variables" as v;
-
 /* GLOBAL */
 img {
   max-inline-size: 100%;
   display: block; //to remove the little margin at the bottom of images the browser adds to them.. should this be in reset?
 }
-
 h1 {
   color: v.$heading-one;
-  font-size: 2.2rem;
-  border-inline-start: 4px solid #bf0001;
-  padding-inline-start: 0.5rem;
+  font-size: v.$step-0;
 }
-
 h2 {
   color: v.$heading-two;
+  font-size: v.$step--2;
 }

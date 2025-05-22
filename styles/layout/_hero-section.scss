@@ -1,0 +1,37 @@
+@use "../abstracts/variables" as v;
+
+/* HERO SECTION */
+.hero {
+  color: v.$text-light;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.4)), url("../img/kobo-lady.jpg");
+  background-position: center;
+  background-size: cover;
+  &__heading {
+    border-inline-start: 4px solid #bf0001;
+    padding-inline-start: 0.5rem; //push left border further away
+  }
+  &__content {
+    max-inline-size: min(90vw, 850px);
+    block-size: 100%;
+    margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__description {
+    font-size: v.$step--3;
+  }
+  &__buttons {
+    margin-inline-start: auto;
+  }
+  &__button--buy {
+    background-color: v.$primary;
+  }
+  &__button--learn {
+    background-color: v.$secondary;
+  }
+  &__button--learn a {
+    color: inherit;
+    text-decoration: none;
+  }
+}
