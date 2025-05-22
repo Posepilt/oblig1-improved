@@ -1,10 +1,10 @@
 /* GALLERY */
 .gallery {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
+  overflow-x: auto; //allows horizontal scrolling inside the container
+  scroll-snap-type: x mandatory; //scroll stops at each image
 
   img {
-    scroll-snap-align: center;
+    scroll-snap-align: center; //centers image when scrolling stops
   }
 }

@@ -1,4 +1,5 @@
+@use "../abstracts/variables" as v;
 /* REVIEWS SECTION */
 .reviews__review {
-  padding: 8px;
+  padding: v.$space-4xs;
 }

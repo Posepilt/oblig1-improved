@@ -4,10 +4,10 @@
 .features__feature {
   background: v.$item;
   border: 2px solid v.$secondary;
-  border-radius: 8px;
-  padding: 8px;
+  border-radius: v.$space-4xs;
+  padding: v.$space-4xs;
 }
 
 .features__img {
-  border-radius: 8px;
+  border-radius: v.$space-4xs;
 }

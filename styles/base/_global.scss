@@ -6,9 +6,12 @@ img {
 }
 h1 {
   color: v.$heading-one;
-  font-size: v.$step-0;
+  font-size: v.$step--1;
 }
 h2 {
   color: v.$heading-two;
   font-size: v.$step--2;
+}
+a {
+  color: inherit;
 }

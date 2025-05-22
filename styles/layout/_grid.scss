@@ -1,0 +1,7 @@
+@use "../abstracts/variables" as v;
+/* GRID */
+.grid-container-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: v.$space-3xs;
+}

@@ -1,5 +1,4 @@
 @use "../abstracts/variables" as v;
-
 /* HERO SECTION */
 .hero {
   color: v.$text-light;
@@ -8,10 +7,10 @@
   background-size: cover;
   &__heading {
     border-inline-start: 4px solid #bf0001;
-    padding-inline-start: 0.5rem; //push left border further away
+    padding-inline-start: v.$space-4xs; //push left border further away
   }
   &__content {
-    max-inline-size: min(90vw, 850px);
+    max-inline-size: min(90vw, 800px);
     block-size: 100%;
     margin-inline: auto;
     display: flex;
@@ -19,7 +18,7 @@
     justify-content: center;
   }
   &__description {
-    font-size: v.$step--3;
+    font-size: v.$step--4;
   }
   &__buttons {
     margin-inline-start: auto;
@@ -28,10 +27,10 @@
     background-color: v.$primary;
   }
   &__button--learn {
+    margin-inline-start: v.$space-4xs;
     background-color: v.$secondary;
   }
   &__button--learn a {
-    color: inherit;
     text-decoration: none;
   }
 }
