@@ -29,6 +29,7 @@
   &__button--learn {
     margin-inline-start: v.$space-4xs;
     background-color: v.$secondary;
+    text-decoration: none;
   }
   &__button--learn a {
     text-decoration: none;

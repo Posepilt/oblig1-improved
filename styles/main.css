@@ -144,6 +144,7 @@ a {
 .hero__button--learn {
   margin-inline-start: clamp(0.25rem, 0.2016rem + 0.2581vw, 0.5rem);
   background-color: #222222;
+  text-decoration: none;
 }
 .hero__button--learn a {
   text-decoration: none;
